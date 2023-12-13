@@ -5,9 +5,9 @@ while looping:
     if L == "end":
         looping = 0
     else:
-        List.append(L)
-nL = [List[-1]]
-for i in List:
-    if i != List[-1]:
-        nL.append(i)
-print(nL)
+        List.append(int(L))
+maximum = 0
+for l in List:
+    if l > maximum:
+        maximum = l
+print(maximum)
